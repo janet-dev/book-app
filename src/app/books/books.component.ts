@@ -19,7 +19,11 @@ export class BooksComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  handleClick() {
+    this.isDisabled = true;
   }
 
+  myName: string = ''
 }
