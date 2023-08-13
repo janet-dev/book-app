@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Book {
+  name: string;
+  author: string;
+  image: string;
+}
+
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
@@ -7,23 +13,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
 
-  name: string = 'Clean Code';
-  author: string = 'Robert C Martin';
-  src: string = 'https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg';
+  books: Book[] = [
+    {
+      name: 'Clean Code',
+      author: 'Robert C Martin',
+      image: 'https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg',
+    },
+    {
+      name: 'Pragmatic Programmer',
+      author: 'David Thomas',
+      image: 'https://m.media-amazon.com/images/P/B07VRS84D1.01._SCLZZZZZZZ_SX500_.jpg',
+    },
+  ]
 
-  name2: string = 'Pragmatic Programmer';
-  author2: string = 'David Thomas';
-  src2: string = 'https://m.media-amazon.com/images/P/B07VRS84D1.01._SCLZZZZZZZ_SX500_.jpg';
 
-  isDisabled: boolean = false;
+  isShowing: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {}
 
-  handleClick() {
-    this.isDisabled = true;
-  }
-
-  myName: string = ''
 }
