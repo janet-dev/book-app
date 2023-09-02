@@ -5,6 +5,9 @@
 # Firebase keys
 /src/app/firebase.config.ts
 
+# Firebase Hosting
+.firebase
+
 # Compiled output
 /dist
 /tmp
