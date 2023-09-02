@@ -1,6 +1,6 @@
 # BookApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.12.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.12 with the help of tutorial [Angular 14 full course 2022 for beginner](https://www.youtube.com/watch?v=IYI0em-xT28&t=320s) by Sarthak Shrivastava [@sarthaksavvy](https://github.com/bitfumes/angular-14-full-course) on GitHub.
 
 ## Development server
 
